@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:scores/core/routing/routes.dart';
 import 'package:scores/features/home/logic/home_cubit.dart';
+import 'package:scores/features/home/ui/screens/score_screen.dart';
 
 import '../../features/home/ui/screens/home_screen.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
     // This arguments to be passed in any screen like this ( arguments as ClassName )
-    // final arguments = settings.arguments;
+    final arguments = settings.arguments;
 
     switch (settings.name) {
       case Routes.homeScreen:
@@ -20,7 +21,7 @@ class AppRouter {
         );
       case Routes.scoreScreen:
         return MaterialPageRoute(
-          builder: (_) => const Scaffold(),
+          builder: (_) => ScoreScreen(score: arguments as num),
         );
       default:
         return null;
