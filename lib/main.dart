@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scores/features/home/ui/screens/home_screen.dart';
+import 'package:scores/core/routing/routes.dart';
+import 'core/routing/app_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      initialRoute: Routes.homeScreen,
+      onGenerateRoute: AppRouter().generateRoute,
+      onUnknownRoute: AppRouter().unknownRoute,
     );
   }
 }
