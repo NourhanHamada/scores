@@ -14,7 +14,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_bloc:
   bloc:
+  get_it:
   google_fonts:
+  flutter_svg:
+  fluttertoast:
 
 dev_dependencies:
   flutter_test:
@@ -28,6 +31,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/icons/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

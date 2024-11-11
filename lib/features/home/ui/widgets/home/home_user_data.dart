@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:scores/core/widgets/text_custom.dart';
-import '../../logic/home_cubit.dart';
+import '../../../logic/home_cubit.dart';
 
 class HomeUserData extends StatelessWidget {
   const HomeUserData({super.key});

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../theming/colors_manager.dart';
 
 class TextCustom extends StatelessWidget {
